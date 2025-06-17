@@ -1,0 +1,23 @@
+$mainClass: '.linksCollection'
+
+#{$mainClass}
+    display: flex
+    align-items: center
+    gap: $space_xsmall
+
+    &-link
+        position: relative
+        text-transform: uppercase
+        color: $light
+        letter-spacing: .1em
+
+        & + #{$mainClass}-link
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: calc(-#{$space_xsmall} / 2)
+                width: 2px
+                height: 100%
+                transform: translateX(-50%)
+                background-color: $light

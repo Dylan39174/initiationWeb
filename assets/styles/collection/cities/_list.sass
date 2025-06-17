@@ -1,0 +1,33 @@
+$mainClass: '.cities'
+
+#{$mainClass}
+    &-number
+        display: block
+        font-size: 1.5em
+        text-align: center
+        margin-top: $space_small
+
+    &-list
+        display: grid
+        gap: $space_small
+        grid-template-columns: repeat(3, 1fr)
+        padding: 0
+        margin-top: $space_small
+        min-height: 70vh
+
+    &-item
+        padding: $space_small
+        background-color: $col2
+        border: 1px solid $dark
+        border-radius: 5px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        height: 150px
+    
+    &-title
+        margin-bottom: $space_xsmall
+
+    &-title, &-population
+        color: $col3

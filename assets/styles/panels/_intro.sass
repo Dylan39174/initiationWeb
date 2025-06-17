@@ -1,0 +1,24 @@
+$mainClass: '.intro'
+
+#{$mainClass}
+    padding: $space_small
+    text-align: center
+    width: 90%
+    max-width: 1100px
+    margin: $space_medium auto 0 auto
+    border-radius: $space_xxsmall
+    border: 1px solid $dark
+
+    input
+        padding: $space_xxsmall
+        
+
+        &[type="button"]
+            text-transform: uppercase
+            background-color: $light
+            cursor: pointer
+            transition: background-color .5s ease-in-out
+            
+        
+            &:hover
+                background-color: $hoverButton

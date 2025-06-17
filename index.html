@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" defer>
+    <script src="./assets/js/cities.js" defer></script>
+</head>
+<body>
+    
+    <header class="siteHeader">
+
+        <a href="index.html" class="siteHeader-logoLink">
+            <picture class="image">
+                <img 
+                    src="./assets/images/apiandyou.png" 
+                    class="siteHeader-logo image-block" 
+                    alt="Logo API & YOU">
+            </picture>
+        </a>
+        
+
+        <div class="siteHeader-links linksCollection">
+            <a 
+                href="contact.html linksCollection-link" 
+                class="siteHeader-link linksCollection-link">Contact</a>
+
+            <a 
+                href="login.html" 
+                class="siteHeader-link linksCollection-link">login</a>
+        </div>
+
+    </header>
+
+    <main class="siteContent">
+        
+        <section class="panel intro">
+            <h1 class="title">Initiation au web</h1>
+
+            <p>Cette mini-interface (ultra stylée) est destinée à afficher les villes en fonction du code postal</p>
+
+            <div class="intro-form">
+                <input type="text" name="cp" id="cp" placeholder="Code Postal" class="js-postalCodeInput">
+                <input type="button" value="Afficher" class="js-postalCodeButton">
+            </div>
+        </section>
+
+        <section class="panel simple">
+            <div class="cities">
+
+                <span class="cities-number"><span class="js-citiesResultNumber"></span> villes trouvées</span>
+
+                <ul class="cities-list js-citiesList">
+                    
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="siteFooter">
+        <div class="siteFooter-links linksCollection">
+            <a 
+                href="contact.html" 
+                class="siteFooter-link linksCollection-link">Contact</a>
+
+            <a 
+                href="login.html" 
+                class="siteFooter-link linksCollection-link">login</a>
+        </div>
+        <span>© - copyright</span>
+    </footer>
+</body>
+</html>
